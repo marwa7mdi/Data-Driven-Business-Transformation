@@ -25,18 +25,19 @@ This project demonstrates a complete end-to-end transformation of an organizatio
 * **The Insight:** Through "Closing Pattern" analysis, I discovered that sales teams were artificially delaying deal closures to meet next month's targets.
 * **The Action:** Engineered a performance tracking system that flagged these anomalies.
 * **Result:** Stabilized monthly revenue forecasting and eliminated "deal pushing" behaviors.
+### 3. Operational Excellence
+* **Bottleneck Analysis:** Conducted internal surveys and process mining to identify friction points. 
+* **Result:** Optimized workflows led to a **5x increase in productivity** and the successful operational launch of **5 new branches**.
 
-### 3. Marketing ROI & Conversion Optimization
+
+### 4. Marketing ROI & Conversion Optimization
 * **Conversion Lift:** Analyzed GA4 search intent and keywords, refining the targeting strategy to achieve a **50% increase in Conversion Rate**.
 * **Budget Optimization:** Identified "False Conversions" coming from low-quality placements (e.g., kids' YouTube channels), reallocating budget to high-performing segments.
 * **Full-Funnel Tracking:** Linked Social Media spend to CRM deals using **GTM**, closing the ROI loop for all campaigns.
-### 4. Automated Email Marketing & Audience Analytics (Mailster)
+### 5. Automated Email Marketing & Audience Analytics (Mailster)
 * **Infrastructure:** Integrated **Mailster** (WordPress-based Email Marketing) with the BI ecosystem via its REST API.
 * **Automation:** Developed an automated dashboard to track campaign performance, open rates, and click-through rates (CTR) directly from the WordPress backend.
 * **Impact:** Enabled hyper-targeted email sequences based on customer behavior, significantly increasing lead engagement and nurturing efficiency.
-### 5. Operational Excellence
-* **Bottleneck Analysis:** Conducted internal surveys and process mining to identify friction points. 
-* **Result:** Optimized workflows led to a **5x increase in productivity** and the successful operational launch of **5 new branches**.
 
 ### 6. Marketing Intelligence & Conversion Engineering (GA4)
 * **The Problem:** Marketing spend was being allocated based on "surface-level" traffic without understanding true conversion intent or ROI.
@@ -45,6 +46,12 @@ This project demonstrates a complete end-to-end transformation of an organizatio
     * **Conversion Lift:** Identified high-performing organic keywords, leading to a **50% increase in Conversion Rate** by refining the content strategy.
     * **Budget Protection:** Discovered "False Conversions" originating from low-quality placements (e.g., kids' YouTube channels). This insight allowed for immediate budget reallocation to high-intent segments.
     * **Full-Funnel Attribution:** Integrated GA4 data with HubSpot deal stages via **Google Tag Manager (GTM)**, successfully closing the ROI loop for digital campaigns.
+
+### 🔄 Automation & Scalability (Cron Jobs)
+To ensure the "Single Source of Truth" remains always fresh without manual intervention:
+* **Scheduled Refresh:** Configured a **Linux Cron Job** to trigger the `data_pipeline_main.py` every night at 2:00 AM.
+* **Error Logging:** Implemented an automated logging system that records the status of each ETL run, ensuring high data reliability for leadership dashboards.
+* **Result:** Eliminated manual data updates, providing the CEO and Department Heads with "ready-to-use" insights every morning before the workday starts.
 ---
 
 ## 📈 Strategic Outcomes & Business Impact
