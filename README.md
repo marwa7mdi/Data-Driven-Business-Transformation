@@ -66,14 +66,21 @@ The implementation of this data ecosystem was not just a technical success, but 
 * **Operational Integrity:** Successfully eliminated "performance gaming" in the sales department, leading to more accurate revenue forecasting and stabilized cash flow.
 
 ---
-
 ## 📂 Repository Structure
+
 ```text
 ├── src/
-│   ├── hubspot_api_connector.py   # Python logic for CRM data extraction
-│   ├── marketing_attribution.sql  # SQL queries for ROI and GA4 analysis
-│   └── data_pipeline_main.py      # Main ETL flow logic
+│   ├── hubspot_ingestion.py      # Python wrapper for HubSpot CRM API (Deals & Contacts)
+│   ├── ga4_extractor.py          # Google Analytics 4 API client for marketing reports
+│   ├── mailster_connector.py     # WordPress/Mailster API for email engagement data
+│   ├── data_pipeline_main.py     # Main ETL Orchestrator with automated logging
+│   └── marketing_attribution.sql  # SQL logic for ROI and cross-platform data joining
 ├── docs/
-│   ├── kpi_framework.pdf          # Definition of cross-departmental metrics
-│   └── system_architecture.png    # Visual map of the data ecosystem
-└── README.md
+│   ├── kpi_framework.md          # Comprehensive strategic measurement framework
+│   └── architecture_map.png      # Visual flow from Raw APIs to BI Dashboards
+├── config/
+│   └── crontab_schedule.txt      # Linux Cron Job configuration for 2:00 AM refreshes
+├── .env.example                  # Template for required API credentials (Security)
+├── .gitignore                    # Ensures sensitive keys and data remain private
+├── requirements.txt               # Project dependencies (Pandas, Requests, GA4 SDK)
+└── README.md                     # Project documentation and business case study
