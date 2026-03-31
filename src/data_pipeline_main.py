@@ -1,3 +1,14 @@
+import logging
+
+# Configure logging to save results to a file for Cron Job auditing
+logging.basicConfig(
+    filename='logs/pipeline.log',
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+
+# Replace 'print' with 'logging.info' inside your functions
+logging.info("ETL Pipeline started automatically via Cron Job.")
 import os
 import pandas as pd
 from datetime import datetime
