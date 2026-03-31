@@ -30,12 +30,15 @@ This project demonstrates a complete end-to-end transformation of an organizatio
 * **Conversion Lift:** Analyzed GA4 search intent and keywords, refining the targeting strategy to achieve a **50% increase in Conversion Rate**.
 * **Budget Optimization:** Identified "False Conversions" coming from low-quality placements (e.g., kids' YouTube channels), reallocating budget to high-performing segments.
 * **Full-Funnel Tracking:** Linked Social Media spend to CRM deals using **GTM**, closing the ROI loop for all campaigns.
-
-### 4. Operational Excellence
+### 4. Automated Email Marketing & Audience Analytics (Mailster)
+* **Infrastructure:** Integrated **Mailster** (WordPress-based Email Marketing) with the BI ecosystem via its REST API.
+* **Automation:** Developed an automated dashboard to track campaign performance, open rates, and click-through rates (CTR) directly from the WordPress backend.
+* **Impact:** Enabled hyper-targeted email sequences based on customer behavior, significantly increasing lead engagement and nurturing efficiency.
+### 5. Operational Excellence
 * **Bottleneck Analysis:** Conducted internal surveys and process mining to identify friction points. 
 * **Result:** Optimized workflows led to a **5x increase in productivity** and the successful operational launch of **5 new branches**.
 
-### 3. Marketing Intelligence & Conversion Engineering (GA4)
+### 6. Marketing Intelligence & Conversion Engineering (GA4)
 * **The Problem:** Marketing spend was being allocated based on "surface-level" traffic without understanding true conversion intent or ROI.
 * **The Solution:** Developed a custom **Python-based GA4 Reporting Client** to fetch granular data on session sources, mediums, and landing page performance.
 * **Key Achievements:**
