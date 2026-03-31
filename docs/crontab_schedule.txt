@@ -1,2 +1,0 @@
-# This Cron Job runs the main ETL pipeline every day at 2:00 AM
-# 0 2 * * * /usr/bin/python3 /path/to/your/project/src/data_pipeline_main.py >> /path/to/your/project/logs/etl_log.txt 2>&1
