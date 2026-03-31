@@ -75,6 +75,7 @@ The implementation of this data ecosystem was not just a technical success, but 
 │   ├── mailster_connector.py     # WordPress/Mailster API for email engagement data
 │   ├── data_pipeline_main.py     # Main ETL Orchestrator with automated logging
 │   └── marketing_attribution.sql  # SQL logic for ROI and cross-platform data joining
+│   └──generate_architecture_hd.py # Generate architecture PNG
 ├── docs/
 │   ├── kpi_framework.md          # Comprehensive strategic measurement framework
 │   └── architecture_map.png      # Visual flow from Raw APIs to BI Dashboards
