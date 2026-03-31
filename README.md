@@ -34,6 +34,14 @@ This project demonstrates a complete end-to-end transformation of an organizatio
 ### 4. Operational Excellence
 * **Bottleneck Analysis:** Conducted internal surveys and process mining to identify friction points. 
 * **Result:** Optimized workflows led to a **5x increase in productivity** and the successful operational launch of **5 new branches**.
+
+### 3. Marketing Intelligence & Conversion Engineering (GA4)
+* **The Problem:** Marketing spend was being allocated based on "surface-level" traffic without understanding true conversion intent or ROI.
+* **The Solution:** Developed a custom **Python-based GA4 Reporting Client** to fetch granular data on session sources, mediums, and landing page performance.
+* **Key Achievements:**
+    * **Conversion Lift:** Identified high-performing organic keywords, leading to a **50% increase in Conversion Rate** by refining the content strategy.
+    * **Budget Protection:** Discovered "False Conversions" originating from low-quality placements (e.g., kids' YouTube channels). This insight allowed for immediate budget reallocation to high-intent segments.
+    * **Full-Funnel Attribution:** Integrated GA4 data with HubSpot deal stages via **Google Tag Manager (GTM)**, successfully closing the ROI loop for digital campaigns.
 ---
 
 ## 📈 Strategic Outcomes & Business Impact
