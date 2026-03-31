@@ -66,6 +66,28 @@ The implementation of this data ecosystem was not just a technical success, but 
 * **Operational Integrity:** Successfully eliminated "performance gaming" in the sales department, leading to more accurate revenue forecasting and stabilized cash flow.
 
 ---
+---
+
+## 🏗️ Infrastructure & Automation (Diagrams-as-Code)
+
+To ensure the technical infrastructure is scalable and well-documented, I developed a complete **System Architecture Map**. This outlines the automated data flow from raw APIs to final BI Dashboards.
+
+I utilized a **Diagrams-as-Code** approach (using Python and Graphviz) to ensure the documentation is version-controlled and easily reproducible.
+
+<p align="center">
+  <img src="docs/architecture_map.png" alt="Swans Architecture Map" width="100%">
+</p>
+
+### 🧩 Mapping the Data Flow
+
+| Component | Function | Technology |
+| :--- | :--- | :--- |
+| **1. Data Sources** | External CRM, Marketing, and Operational APIs. | HubSpot, GA4, Mailster, PostgreSQL |
+| **2. Automated ETL** | Central Orchestrator that cleans and merges data. | Python (Pandas + Requests) |
+| **3. Storage & Modeling** | Structured Storage and ROI analysis. | CSV/Database + SQL (Attribution Model) |
+| **4. Visualization** | Final, real-time dashboards for leadership. | Power BI / Looker Studio |
+
+> **Automation Note:** The entire pipeline is triggered automatically via a **Linux Cron Job** every night at 2:00 AM, ensuring a "Single Source of Truth" is ready before the workday begins.
 ## 📂 Repository Structure
 
 ```text
