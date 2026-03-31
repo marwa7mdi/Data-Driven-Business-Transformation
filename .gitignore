@@ -1,0 +1,23 @@
+# Security: Sensitive API keys and credentials
+.env
+*.json
+!service_account.json.example
+
+# Python: Virtual environments and cache
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+
+# Data: Local data exports and logs
+data/*.csv
+*.csv
+*.xlsx
+logs/*.log
+*.log
+
+# OS: System specific files
+.DS_Store
+Thumbs.db
